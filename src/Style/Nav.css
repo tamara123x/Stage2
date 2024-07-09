@@ -1,0 +1,213 @@
+/* Base styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  height: 100px;
+}
+
+.navbar-logo {
+  width: 180px;
+  height: 35px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-links li {
+  padding: 0.5rem 4.5rem;
+}
+
+.shop-link {
+  background-color: #E3E3E3;
+  padding: 0.9rem 1rem;
+}
+
+.navbar-links li b {
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  text-align: center;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-icons .icon {
+  margin-left: 0.5rem;
+  font-size: 22px;
+  border: none;
+}
+
+.navbar-icons :hover {
+  color: #0F6100;
+}
+
+.icon-with-badge {
+  position: relative;
+  display: inline-block;
+}
+
+.badge {
+  position: absolute;
+  top: 3px;
+  right: 9px;
+  background-color: #0F6100;
+  color: white;
+  border-radius: 80%;
+  padding: 3px 5px 2px 5px;
+  font-size: 10px;
+}
+
+.login-button {
+  background-color: #0F6100;
+  color: #DEFFD8;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  font-weight: 700;
+}
+
+.login-button:hover {
+  background-color: #20b041;
+  color: #f6f2f2; 
+}
+
+/* Responsive styles */
+@media (max-width: 1250px) {
+  .navbar {
+    padding: 1rem 1rem;
+  }
+  .navbar-links li {
+    padding: 0.5rem 3rem;
+  }
+}
+
+@media (max-width: 1045px) {
+  .navbar-links li {
+    padding: 0.5rem 2rem;
+  }
+}
+
+@media (max-width: 965px) {
+  .navbar{
+    height: 80px;
+  }
+
+  .navbar-links li {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links li b {
+    font-size: 18px;
+    letter-spacing: 0px;
+  }
+
+  .navbar-icons {
+    gap: 0.1rem;
+  }
+
+  .navbar-icons .icon {
+    font-size: 20px;
+  }
+
+  .login-button {
+    padding: 0.4rem 0.5rem;
+    font-size: 14px;
+    letter-spacing: 0px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 815px) {
+  .navbar-logo {
+    width: 150px;
+    height: 30px;
+  }
+
+  .navbar-icons {
+    gap: 0rem;
+  }
+
+  .navbar-links li b {
+    font-size: 15px;
+  }
+
+  .navbar-icons .icon {
+    margin-left: 0.1rem;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 725px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 300px;
+  }
+
+  .navbar-logo {
+    margin-bottom: 0rem;
+    margin-right: 0rem;
+  }
+
+  .navbar-links {
+    align-items: flex-start;
+    gap: 3rem;
+    margin-bottom: 1rem;
+    padding-left: 15px;
+  }
+
+  .navbar-links li {
+    padding: 0rem 0rem;
+  }
+
+  .navbar-actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-icons {
+    padding-left: 0px;
+    gap: 0rem;
+  }
+
+  .login-button {
+    width: 100%;
+    text-align: center;
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar-links {
+    gap: 0.5rem;
+  }
+
+  .navbar-links li {
+    padding: 0.5rem 0;
+  }
+
+  .navbar-icons .icon {
+    font-size: 20px;
+  }
+}

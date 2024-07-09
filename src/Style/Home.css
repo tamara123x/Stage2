@@ -1,0 +1,240 @@
+.home-container {
+   background-color: #F2F2F7;
+    padding: 1rem;
+    color: #7d7d7d; 
+  }
+  
+  .home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border: 1px;
+    background-color: #ffffff;
+    padding: 0.5rem;
+  }
+  
+  .categories span {
+    margin-right: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 2rem;
+  }
+  
+  .categories .active {
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    color: black;
+  }
+  
+  .search-settings {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar {
+    width: 100%; /* Full width */
+    padding: 0.8rem 22rem 0.8rem 3rem; /* Add padding to leave space for the icon */
+    border: 1px solid #aaaaaa;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    background-image: url('/src/Images/Search.svg'); /* Path to your icon file */
+    background-position: left 10px center; /* Position the icon inside the input field */
+    background-repeat: no-repeat; 
+    background-size: 28px; /* Adjust the size of the icon */
+  
+  }
+  
+  .setting-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-left: 1rem;
+  }
+  
+  .series-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    border: 1px ;
+    background-color: #ffffff;
+    padding: 0.8rem;
+  }
+  
+  .series {
+    border: 1.5px solid rgb(120, 115, 106);
+    padding: 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    margin: 0 0.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.6rem;
+  }
+
+  .Series {
+    border: 1.59px solid rgb(27, 86, 1);
+    background-color: #BDFFB18C;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 0.5rem;
+    padding-left: 1.5rem;
+    padding-bottom: 0.6rem;
+    padding-right: 1.5rem;
+    padding-top: 0.8rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    color: rgb(27, 86, 1);
+  }
+  
+  .sort-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    padding: 0.8rem;
+    color: #000000;
+  }
+  
+  .sort-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sort-left span {
+    margin-left: 0.5rem;
+    padding: o.5rem;
+    padding: 0rem 1rem;
+  }
+  
+  .sort-left select {
+    margin-left: 1rem;
+    padding: 0.55rem 0.5rem;
+    border-radius: 0.7rem;
+    background-color: #f7f7f7;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .sort-right {
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+  }
+  
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.product {
+  background-color: white;
+  padding: 0.5rem;
+  border: 1px #ddd;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  background-color: #FAFAFA;
+  padding-top: 12rem;
+  margin-bottom: 1rem;
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: 80%;
+  border-radius: 10px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+}
+.product-info h3 {
+  margin: 0;
+  margin-bottom: 0.8rem;
+  font-size: 20px;
+  padding-left: 6px;
+}
+
+.product-info p {
+  margin: 0;
+  margin-bottom: 0.8rem;
+  font-size: 22px;
+  padding-left: 6px;
+}
+
+.product-reviews {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 17px;
+}
+
+.product-reviews span {
+  margin-right: 0.5rem;
+}
+
+.add-to-cart {
+  width: 135px; 
+  height: 42px; 
+  padding: 0.5rem; 
+  border-radius: 10px; 
+  background-color: #0F6100; 
+  color: white; 
+  border: none; 
+  cursor: pointer; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.add-to-cart img {
+  width: 20px; 
+  height: 20px; 
+  margin-right: 0.5rem; 
+}
+
+.add-to-cart:hover {
+  background-color: #28a745;
+}
+
+.add-to-cart b {
+  font-size: 14.8px; 
+  text-align: center;
+  color: #DEFFD8;
+  margin: 0; 
+  line-height: 1; 
+  white-space: nowrap; 
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+  
+.pagination-icon, .pagination-number {
+  margin: 0 0.5rem;
+  cursor: pointer;
+  font-size: 30px;
+}
+  

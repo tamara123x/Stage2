@@ -1,0 +1,107 @@
+.product-card {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.product-details {
+  display: flex;
+  gap: 20px;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.top-left {
+  height: 200px;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.top-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.top-bottom div {
+  flex: 1;
+  height: 100px;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.top-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.favorite {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.color-selection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.specifications {
+  margin-top: 20px;
+}
+
+.spec-details ul {
+  padding-left: 20px;
+}
+
+.spec-details ul li {
+  margin-bottom: 5px;
+}
+
+.add-to-cart {
+  text-align: right;
+}
+
+.recommended-section {
+  margin-top: 20px;
+}
+
+.recommended-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.recommended-card {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.love-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.image {
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.description {
+  margin-top: 10px;
+}
