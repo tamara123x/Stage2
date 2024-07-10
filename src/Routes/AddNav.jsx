@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../Images/LOGO.svg';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faHeart, faUser, faBars } from '@fortawesome/free-solid-svg-icons';
 
@@ -34,13 +35,13 @@ const Navbar = () => {
         </button>
       </div>
       <ul className={`fixed inset-0 flex flex-col items-center justify-center bg-white bg-opacity-90 md:static md:flex md:flex-row md:items-center md:gap-8 ${isMenuOpen ? 'block' : 'hidden'}`}>
-        <li className="p-4 md:px-6"><b>Home</b></li>
+      <Link to ='/'> <li className="p-4 md:p-6"><b>Home</b></li> </Link>
         <li className="bg-gray-300 p-4 md:px-6"><b>Shop</b></li>
         <li className="p-4 md:px-6"><b>About us</b></li>
         <div className="flex flex-col items-center gap-4 mt-4 md:hidden">
-          <a href="/cart" className="text-2xl hover:text-green-700">
-            <IconWithBadge icon={faShoppingCart} badgeCount={3} />
-          </a>
+        <Link  to="/cart" className="text-2xl hover:text-green-700">
+            <IconWithBadge icon={faShoppingCart} badgeCount={3} /> 
+          </Link>
           <a href="/wishlist" className="text-2xl hover:text-green-700">
             <FontAwesomeIcon icon={faHeart} />
           </a>
@@ -53,9 +54,10 @@ const Navbar = () => {
         </div>
       </ul>
       <div className="hidden md:flex items-center gap-x-6">
-        <a href="/cart" className="text-2xl hover:text-green-700">
+      <Link to="/cart"  className="text-2xl hover:text-green-700">
           <IconWithBadge icon={faShoppingCart} badgeCount={3} />
-        </a>
+        </Link>
+        
         <a href="/wishlist" className="ml-2 text-2xl hover:text-green-700">
           <FontAwesomeIcon icon={faHeart} />
         </a>
