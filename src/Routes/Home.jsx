@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from './Nav';
 import Footer from '../Routes/Footer';
-import setting from '../Images/Setting.svg'; 
-import sort from '../Images/Sorticon.svg'; 
+import setting from '../Images/Setting.svg';
+import sort from '../Images/Sorticon.svg';
 
 import Note10 from '../Images/Note10.svg';
 import S9 from '../Images/S9.svg';
@@ -50,75 +50,77 @@ const products = [
 const Home = () => {
   return (
     <> 
-    <Navbar/>
-    <Display />
-    <div className="home-container bg-gray-100 p-4 text-gray-700">
-    <div className="home-header flex flex-col md:flex-row justify-between items-center mb-4 bg-white p-2">
-      <div className="categories mb-2 md:mb-0">
-        <span className="active font-bold cursor-pointer px-4 py-2 block md:inline-block">Samsung Phones</span>
-        <span className="font-bold cursor-pointer px-4 py-2 block md:inline-block">Samsung Tablets</span>
-        <span className="font-bold cursor-pointer px-4 py-2 block md:inline-block">Accessories</span>
-      </div>
+      <Navbar/>
+      <Display />
+      <div className="home-container bg-gray-100 p-4 text-gray-700">
+        <div className="home-header flex flex-col md:flex-row justify-between items-center mb-4 bg-white p-2">
+          <div className="categories mb-2 md:mb-0 ">
+            <span className="active font-bold cursor-pointer px-4 py-2 block md:inline-block underline">Samsung Phones</span>
+            <span className="font-bold cursor-pointer px-4 py-2 block md:inline-block">Samsung Tablets</span>
+            <span className="font-bold cursor-pointer px-4 py-2 block md:inline-block">Accessories</span>
+          </div>
 
-      <div className="search-settings flex items-center mt-2 md:mt-0">
-        <input type="text" placeholder="Search product" className="search-bar w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-black" />
-        <img src={setting} alt="Set" className="setting-icon ml-4 cursor-pointer" />
-      </div>
-    </div>
-
-    <div className="series-container flex flex-wrap justify-between mb-4 bg-white p-2">
-      <div className="Series border-2 border-green-500 bg-green-100 p-2 rounded-md cursor-pointer mb-2 md:mb-0">All</div>
-      <div className="series border-2 border-gray-500 p-2 rounded-md cursor-pointer mb-2 md:mb-0">Galaxy S series</div>
-      <div className="series border-2 border-gray-500 p-2 rounded-md cursor-pointer mb-2 md:mb-0">Galaxy Note series</div>
-      <div className="series border-2 border-gray-500 p-2 rounded-md cursor-pointer mb-2 md:mb-0">Galaxy Z series</div>
-      <div className="series border-2 border-gray-500 p-2 rounded-md cursor-pointer mb-2 md:mb-0">Galaxy A series</div>
-      <div className="series border-2 border-gray-500 p-2 rounded-md cursor-pointer mb-2 md:mb-0">Galaxy M series</div>
-      <div className="series border-2 border-gray-500 p-2 rounded-md cursor-pointer mb-2 md:mb-0">Galaxy F series</div>
-    </div>
-
-    <div className="sort-container flex flex-col md:flex-row justify-between items-center mb-4 bg-white p-2">
-      <div className="sort-left flex items-center mb-2 md:mb-0">
-        <img src={sort} alt="sort" className="sort-icon" />
-        <span className="ml-2">Sort by</span>
-        <select className="ml-2 py-1 px-2 rounded-md bg-gray-200">
-          <option>New</option>
-          <option>Trending</option>
-        </select>
-      </div>
-
-      <div className="sort-right text-base">
-        Showing 1-16 of 50 results
-      </div>
-    </div>
-
-    <div className="products-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-4">
-      {products.map((product, index) => (
-        <div className="product bg-white p-2 border border-gray-300 rounded-md" key={index}>
-          <img src={Love} alt="Fav" className="favorite-icon absolute top-2 right-2 cursor-pointer" />
-          <div className="product-image bg-gray-200 h-64 bg-contain bg-center bg-no-repeat rounded-md" style={{ backgroundImage: `url(${product.image})` }}></div>
-
-          <div className="product-info mt-2">
-            <h3 className="text-lg font-semibold">{product.name}</h3>
-            <p className="text-xl font-bold">{product.price}</p>
-            <div className="product-reviews flex items-center text-base">
-              <span className="inline-block mr-2"><img src={Ratings} alt="Ratings" className="Rate" /></span> ({product.reviews} reviews)
-            </div>
-
-            <button className="add-to-cart mt-2 bg-green-600 text-white px-3 py-1 rounded-md flex items-center justify-center">
-              <img src={Cart} alt="Cart" className="w-5 h-5 mr-1" /> 
-              <b>Add to Cart</b>
-            </button>
+          <div className="search-settings flex items-center mt-2 md:mt-0">
+            <input type="text" placeholder="Search product" className="search-bar w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-black" />
+            <img src={setting} alt="Set" className="setting-icon ml-4 cursor-pointer" />
           </div>
         </div>
-      ))}
-    </div>
 
-    <div className="pagination flex items-center justify-center">
-      <img src={Left} alt="Left" className="pagination-icon text-2xl cursor-pointer" /> 
-      <div className="pagination-number text-xl font-bold mx-2">1</div>
-      <img src={Right} alt="Right" className="pagination-icon text-2xl cursor-pointer" /> 
-    </div>
-  </div>  <Footer/> </>
+        <div className="series-container flex flex-wrap gap-5 mb-4 bg-white p-2 px-8 ">
+          <div className="series-item border-2 border-green-500 bg-green-100 p-2 rounded-md cursor-pointer mb-2 md:mb-0 px-8">All</div>
+          <div className="series-item border-2 border-gray-500 p-2 rounded-md cursor-pointer mb-2 md:mb-0 px-10">Galaxy S series</div>
+          <div className="series-item border-2 border-gray-500 p-2 rounded-md cursor-pointer mb-2 md:mb-0 px-10">Galaxy Note series</div>
+          <div className="series-item border-2 border-gray-500 p-2 rounded-md cursor-pointer mb-2 md:mb-0 px-10">Galaxy Z series</div>
+          <div className="series-item border-2 border-gray-500 p-2 rounded-md cursor-pointer mb-2 md:mb-0 px-10">Galaxy A series</div>
+          <div className="series-item border-2 border-gray-500 p-2 rounded-md cursor-pointer mb-2 md:mb-0 px-10">Galaxy M series</div>
+          <div className="series-item border-2 border-gray-500 p-2 rounded-md cursor-pointer mb-2 md:mb-0 px-10">Galaxy F series</div>
+        </div>
+
+        <div className="sort-container flex flex-col md:flex-row justify-between items-center mb-4 bg-white p-2 ">
+          <div className="sort-left flex items-center mb-2 md:mb-0">
+            <img src={sort} alt="sort" className="sort-icon" />
+            <span className="ml-2">Sort by</span>
+            <select className="ml-2 py-1 px-2 rounded-md bg-[#FAFAFA]">
+              <option>New</option>
+              <option>Trending</option>
+            </select>
+          </div>
+
+          <div className="sort-right text-base">
+            Showing 1-16 of 50 results
+          </div>
+        </div>
+
+        <div className="products-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-9 px-5">
+          {products.map((product, index) => (
+            <div className="product bg-white p-2 border border-gray-300 rounded-md relative py-6" key={index}>
+              <img src={Love} alt="Fav" className="favorite-icon absolute top-2 right-2 cursor-pointer" />
+              <div className="product-image bg-[#FAFAFA] h-64 bg-contain bg-center bg-no-repeat rounded-md py-4" style={{ backgroundImage: `url(${product.image})` }}></div>
+
+              <div className="product-info mt-2 px-2">
+                <h3 className="text-lg font-semibold py-3">{product.name}</h3>
+                <p className="text-xl font-bold pb-3">{product.price}</p>
+                <div className="product-reviews flex items-center text-base">
+                  <span className="inline-block mr-2 py-2"><img src={Ratings} alt="Ratings" className="Rate" /></span> ({product.reviews} reviews)
+                </div>
+
+                <button className="add-to-cart mt-2 bg-[#0F6100] text-white px-3 py-1 rounded-md flex items-center justify-center">
+                  <img src={Cart} alt="Cart" className="w-5 h-5 mr-1" /> 
+                  <b>Add to Cart</b>
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="pagination flex items-center justify-center">
+          <img src={Left} alt="Left" className="pagination-icon text-2xl cursor-pointer" /> 
+          <div className="pagination-number text-xl font-bold mx-2">1</div>
+          <img src={Right} alt="Right" className="pagination-icon text-2xl cursor-pointer" /> 
+        </div>
+      </div>
+      <Footer/>
+    </>
   );
 };
 
