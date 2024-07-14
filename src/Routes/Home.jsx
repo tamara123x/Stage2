@@ -95,7 +95,9 @@ const Home = () => {
           {products.map((product, index) => (
             <div className="product bg-white p-2 border border-gray-300 rounded-md relative py-6" key={index}>
               <img src={Love} alt="Fav" className="favorite-icon absolute top-2 right-2 cursor-pointer" />
+              <Link to='/ProductCard'>
               <div className="product-image bg-[#FAFAFA] h-64 bg-contain bg-center bg-no-repeat rounded-md py-4" style={{ backgroundImage: `url(${product.image})` }}></div>
+              </Link>
 
               <div className="product-info mt-2 px-2">
                 <h3 className="text-lg font-semibold py-3">{product.name}</h3>
