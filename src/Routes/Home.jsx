@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from './Nav';
 import Footer from '../Routes/Footer';
+
 import setting from '../Images/Setting.svg';
 import sort from '../Images/Sorticon.svg';
 
@@ -27,6 +29,7 @@ import Right from '../Images/Right.svg';
 import Left from '../Images/Left.svg';
 import Cart from '../Images/cart2.svg';
 import Display from './Display';
+
 
 const products = [
   { name: 'Samsung Galaxy Note 10Plus - 6.8" (256GB/12GB)', price: '₦780,000', image: Note10, reviews: 21},
@@ -98,6 +101,7 @@ const Home = () => {
               <Link to='/ProductCard'>
               <div className="product-image bg-[#FAFAFA] h-64 bg-contain bg-center bg-no-repeat rounded-md py-4" style={{ backgroundImage: `url(${product.image})` }}></div>
               </Link>
+              
 
               <div className="product-info mt-2 px-2">
                 <h3 className="text-lg font-semibold py-3">{product.name}</h3>
@@ -105,11 +109,11 @@ const Home = () => {
                 <div className="product-reviews flex items-center text-base">
                   <span className="inline-block mr-2 py-2"><img src={Ratings} alt="Ratings" className="Rate" /></span> ({product.reviews} reviews)
                 </div>
-
                 <button className="add-to-cart mt-2 bg-[#0F6100] text-white px-3 py-1 rounded-md flex items-center justify-center">
-                  <img src={Cart} alt="Cart" className="w-5 h-5 mr-1" /> 
-                  <b>Add to Cart</b>
-                </button>
+                    <img src={Cart} alt="Cart" className="w-5 h-5 mr-1" /> 
+                    <b>Add to Cart</b>
+                  </button>
+          
               </div>
             </div>
           ))}
